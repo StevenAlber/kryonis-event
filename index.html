@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Official communiqué – The Sovereign Metabolic Council. A diplomatic private dinner on the TEC-X Protocol in Dubai, February 2 & 4, 2026."
+    content="Official communiqué – The Sovereign Metabolic Council and Pre-Summit Strategic Briefing on the TEC-X Protocol, Dubai, February 2 & 4, 2026."
   />
 
   <!-- Open Graph -->
@@ -14,7 +14,7 @@
   <meta property="og:title" content="KRYONIS – The Sovereign Metabolic Council" />
   <meta
     property="og:description"
-    content="A diplomatic private dinner on the TEC-X Protocol. Dubai, February 2 & 4, 2026."
+    content="A restricted pre-summit briefing and a diplomatic private dinner on the TEC-X Protocol in Dubai, February 2 & 4, 2026."
   />
   <meta property="og:url" content="https://kryonis.global/council" />
   <meta property="og:image" content="https://kryonis.global/assets/council-og.jpg" />
@@ -26,11 +26,11 @@
   <meta name="twitter:title" content="KRYONIS – The Sovereign Metabolic Council" />
   <meta
     name="twitter:description"
-    content="A diplomatic private dinner on the TEC-X Protocol. Dubai, February 2 & 4, 2026."
+    content="A restricted pre-summit briefing and a diplomatic private dinner on the TEC-X Protocol in Dubai, February 2 & 4, 2026."
   />
   <meta name="twitter:image" content="https://kryonis.global/assets/council-og.jpg" />
 
-  <!-- Favicon -->
+  <!-- Favicon (kohenda oma tee järgi) -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -80,7 +80,6 @@
       text-decoration: none;
     }
 
-    /* Focus styles */
     a:focus-visible,
     button:focus-visible {
       outline: 2px solid var(--gold);
@@ -129,7 +128,7 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .hero-meta {
@@ -140,7 +139,7 @@
       justify-content: center;
       font-size: 0.8rem;
       color: var(--text-muted);
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
 
     .hero-meta span::before {
@@ -149,27 +148,12 @@
       margin-right: 6px;
     }
 
-    .cta-primary {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 14px 36px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #f7d778, #d4af37);
-      color: #141216;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+    .hero-note {
       font-size: 0.8rem;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-
-    .cta-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
-      background: linear-gradient(135deg, #ffe08a, var(--gold-hover));
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0.5rem auto 0;
+      line-height: 1.6;
     }
 
     main {
@@ -203,18 +187,18 @@
       gap: 24px;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       .events-grid {
         grid-template-columns: 1fr;
       }
 
       .hero-title {
-        font-size: 1.8rem;
-        letter-spacing: 0.16em;
+        font-size: 1.9rem;
+        letter-spacing: 0.18em;
       }
 
       .hero-subtitle {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -293,19 +277,38 @@
       transform: translateY(4px);
     }
 
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .cta-primary,
     .cta-secondary {
       display: inline-block;
-      margin-top: 10px;
       padding: 10px 22px;
       border-radius: 999px;
-      border: 1px solid var(--gold);
       font-size: 0.8rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--gold);
-      background: transparent;
       cursor: pointer;
-      transition: background 0.15s ease, color 0.15s ease;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: var(--gold);
+      transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, #f7d778, #d4af37);
+      color: #141216;
+      border: none;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .cta-primary:hover {
+      background: linear-gradient(135deg, #ffe08a, var(--gold-hover));
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
     }
 
     .cta-secondary:hover {
@@ -437,19 +440,17 @@
       <p class="meta-sub">Office of the Founder · Sovereign Strategy Division</p>
 
       <h1 class="hero-title">The Sovereign Metabolic Council</h1>
-      <p class="hero-subtitle">A Diplomatic Private Dinner on the TEC-X Protocol</p>
+      <p class="hero-subtitle">TEC-X Strategic Assemblies · Dubai 2026</p>
 
       <div class="hero-meta">
         <span>Dubai, United Arab Emirates</span>
         <span>2<sup>nd</sup> &amp; 4<sup>th</sup> February 2026</span>
       </div>
 
-      <a
-        href="mailto:council@kryonis.global?subject=Protocol%20Access%20Request%20–%20Sovereign%20Metabolic%20Council"
-        class="cta-primary"
-      >
-        Request Protocol Access
-      </a>
+      <p class="hero-note">
+        Two tightly coupled, invitation-only assemblies: a restricted pre-summit briefing for strategic principals,
+        and a sovereign-tier council dinner for ministers and institutional heads of state-capital.
+      </p>
     </header>
 
     <main>
@@ -468,66 +469,92 @@
           infrastructure layer to be modelled, regenerated, and governed.
         </p>
         <p>
-          The Sovereign Metabolic Council brings together ministers, sovereign fund leaders, and institutional principals
-          to define how metabolic value becomes a new reserve layer for nations, and how this architecture integrates into
-          long-horizon bioeconomy strategies through 2035 and 2050.
+          The Pre-Summit Strategic Briefing and the Sovereign Metabolic Council together form a two-step frame:
+          structural orientation for strategic principals, followed by sovereign negotiation on metabolic reserve
+          architecture.
         </p>
       </section>
 
       <!-- Events -->
       <section aria-labelledby="protocol-heading">
-        <h2 id="protocol-heading" class="section-title">Council Protocol</h2>
+        <h2 id="protocol-heading" class="section-title">Council Assemblies</h2>
         <div class="events-grid">
-          <!-- Pre-Summit -->
+          <!-- Pre-Summit (25k) -->
           <article class="event-card">
             <h3 class="event-name">Pre-Summit Strategic Briefing</h3>
             <div class="event-meta">
               <span><strong>Date</strong> · 2<sup>nd</sup> February 2026</span>
               <span><strong>Time</strong> · 19:30 – 22:00 GST</span>
-              <span><strong>Access</strong> · Restricted Strategic Tier</span>
+              <span><strong>Access Tier</strong> · Restricted Strategic</span>
+              <span><strong>Participation Contribution</strong> · USD 25,000</span>
             </div>
             <p class="event-body">
-              A closed-door orientation to the TEC-X protocol and the RF Blue Bioeconomy 2035/2050 architecture for select
-              decision-makers requiring deep structural context.
+              A closed-door orientation for sovereign principals, institutional leaders, and strategic decision-makers
+              requiring deep structural context on the TEC-X protocol and its integration with the RF Blue Bioeconomy
+              2035/2050 architecture.
             </p>
             <ul class="event-list">
               <li>Architectural overview of the TEC-X sovereign asset model</li>
-              <li>Briefing on the Distributed Marine Biotechnology Laboratory framework</li>
-              <li>Geostrategic analysis of the Northern Eurasian bioeconomy corridor</li>
-              <li>Targeted Q&amp;A with Steven Alber and the KRYONIS core team</li>
+              <li>Distributed Marine Biotechnology Laboratory framework</li>
+              <li>Northern Eurasian metabolic corridor &amp; geostrategic positioning</li>
+              <li>Closed-door Q&amp;A with Steven Alber and KRYONIS core architects</li>
             </ul>
-            <a
-              href="mailto:council@kryonis.global?subject=Briefing%20Access%20Request%20–%202%20February%202026"
-              class="cta-secondary"
-            >
-              Request Briefing Access
-            </a>
+            <div class="cta-row">
+              <a
+                href="mailto:council@kryonis.global?subject=Pre-Summit%20Briefing%20Access%20Request%20–%202%20February%202026"
+                class="cta-primary"
+              >
+                Request Briefing Access
+              </a>
+              <!-- Kohenda PDF link vastavalt oma serverile -->
+              <a
+                href="/assets/kryonis-presummit-briefing.pdf"
+                class="cta-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Briefing Communiqué (PDF)
+              </a>
+            </div>
           </article>
 
-          <!-- Sovereign Council -->
+          <!-- Sovereign Council (75k) -->
           <article class="event-card">
             <h3 class="event-name">The Sovereign Metabolic Council</h3>
             <div class="event-meta">
               <span><strong>Date</strong> · 4<sup>th</sup> February 2026</span>
               <span><strong>Time</strong> · 19:30 – 22:00 GST</span>
-              <span><strong>Access</strong> · Sovereign (Invitation Only)</span>
+              <span><strong>Access Tier</strong> · Sovereign (Invitation Only)</span>
+              <span><strong>Council Participation Contribution</strong> · USD 75,000</span>
             </div>
             <p class="event-body">
-              A diplomatic private dinner convening ministers, sovereign fund governors, and institutional principals to
-              negotiate the first generation of metabolic reserve frameworks.
+              A diplomatic private dinner convening ministers, sovereign fund governors, and institutional principals
+              to negotiate the first generation of metabolic reserve frameworks aligned with TEC-X and the Northern
+              Eurasian bioeconomy horizon.
             </p>
             <ul class="event-list">
               <li>Formal presentation of the TEC-X sovereign architecture</li>
-              <li>Scenario exploration: from blue bioeconomy corridors to reserve design</li>
-              <li>Council dialogue on governance, alignment, and implementation pathways</li>
-              <li>Initial protocol signings and forward allocation roadmap</li>
+              <li>Metabolic reserve design and cross-border alignment</li>
+              <li>Strategic dialogue on governance and allocation frameworks</li>
+              <li>Closed-door Q&amp;A with Steven Alber and KRYONIS core architects</li>
             </ul>
-            <a
-              href="mailto:council@kryonis.global?subject=Council%20Invitation%20Request%20–%204%20February%202026"
-              class="cta-secondary"
-            >
-              Request Council Invitation
-            </a>
+            <div class="cta-row">
+              <a
+                href="mailto:council@kryonis.global?subject=Council%20Invitation%20Request%20–%204%20February%202026"
+                class="cta-primary"
+              >
+                Request Council Invitation
+              </a>
+              <!-- Kohenda PDF link vastavalt oma serverile -->
+              <a
+                href="/assets/kryonis-sovereign-council.pdf"
+                class="cta-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Council Communiqué (PDF)
+              </a>
+            </div>
           </article>
         </div>
       </section>
@@ -535,15 +562,14 @@
       <!-- Framework -->
       <section class="framework" aria-labelledby="framework-heading">
         <h2 id="framework-heading" class="section-title">
-          Framework: TEC-X &amp; The Blue Bioeconomy
+          Framework: TEC-X &amp; Metabolic Sovereignty
         </h2>
         <div class="framework-grid">
           <div class="framework-item">
             <h3>Metabolic Collateral</h3>
             <p>
-              TEC-X is grounded in the quantified, auditable metabolic output of Arctic and Northern Eurasian ecosystems –
-              from microbial and algal productivity to regenerative biomass cycles – transforming living systems into a
-              sovereign-grade reserve layer.
+              TEC-X is grounded in quantified, auditable metabolic output – from microbial and algal productivity to
+              regenerative biomass cycles – transforming living systems into a sovereign-grade reserve layer.
             </p>
           </div>
           <div class="framework-item">
@@ -557,22 +583,16 @@
             <h3>Strategic Corridors</h3>
             <p>
               The Council explores cross-border metabolic corridors across Northern Eurasia and allied regions, aligning
-              TEC-X with 2035/2050 bioeconomy roadmaps and the emergence of biological reserve currencies.
+              TEC-X with 2035/2050 roadmaps and the emergence of biological reserve currencies.
             </p>
           </div>
         </div>
 
         <div class="access-block">
           <p>
-            There will be no livestream and no public broadcast. This is a closed protocol environment. Access is extended
-            only via direct diplomatic channels.
+            There will be no livestream and no public broadcast. Both assemblies operate as closed protocol environments.
+            Access is extended only via direct diplomatic and strategic channels.
           </p>
-          <a
-            href="mailto:council@kryonis.global?subject=Diplomatic%20Contact%20–%20Sovereign%20Metabolic%20Council"
-            class="cta-primary"
-          >
-            Initiate Contact
-          </a>
           <p class="access-note">
             Participation is subject to enhanced due diligence and sovereign approval. This communiqué does not constitute
             an offer of securities or financial products.
